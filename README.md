@@ -24,7 +24,7 @@ module "testvm" {
 
   count             = 2
   
-  source            = "https://github.com/UCL-ARC/ovirt-terraform-vm//?ref=v0.1.0"
+  source            = "github.com/UCL-ARC/ovirt-terraform-vm//?ref=v0.1.0"
   cluster_id        = "<OVIRT_CLUSTER_ID>"
   vm_name           = "${format("test-%02d", count.index + 1)}"
   vm_hostname       = "${format("test-%02d", count.index + 1)}"
